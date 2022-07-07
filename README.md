@@ -1,2 +1,4 @@
 # linguistic-drift
-Visualization of the linguistic drift of words over time
+The meaning of words is constantly changing as a reflection of the society's evolution and cultural shift. Several studies have been exploring and analyzing this phenomenon, however, we are still lacking of robust visualization techniques that would ensure a proper understanding of linguistic drifts. Therefore, the aim of this project is to build new dynamic and scalable visualization methodologies that provide relevant insights regarding the mutation of the words' meanings over time. 
+The study made use of the PubMed dataset, from which several article's abstracts of biomedical nature were extracted (using NLP preprocessing techniques) and divided into 6 time bins (70s, 80s, 90s, 00s, 10s and 20s). For all the words related to each period of time, we implemeneted the Word2Vec algorithm to create word emdeddings in order to calculate the word's context and similarities over time.
+We were then able to create 3 different types of visualizations and compare them to the current ones, presented in semantic shift literature.
