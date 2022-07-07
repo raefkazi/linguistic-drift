@@ -8,3 +8,10 @@ We used data from PubMed https://pubmed.ncbi.nlm.nih.gov for the research, which
 We retrieved the data as xml files via the FTP connection provided by the National Library of Medicine, and have included only articles from 1970 onward due to the unavailability of digitized abstract data for articles prior to that time period. Therefore, the study only focuses on linguistic drift observed in the last 50 years.
 
 Using the entirety of the PubMed corpus available would require high computational and storage capabilities, and as such, we decided to use 106 out of the available 1114 xml files, selected to represent samples from all 52 years, and whose word embeddings would not benefit from additional data. 
+# Jupyter Notebook
+The code was written in Python on Jupyter Notebook. The structure of the code is the following:
+- Parsing of XML files from data source
+- NLP pre-processing of the articles' abstracts
+- Creation of word emdeddings using Word2Vec algorithm
+- Final pre-processing of the data for Tableau visualizations
+- Calculation of Jaccard similarity frequency distribution to analyze the evolution of word's contexts over time
